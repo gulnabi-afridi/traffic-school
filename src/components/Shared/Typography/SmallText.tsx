@@ -7,7 +7,7 @@ interface Props {
 
 function SmallText({ children, styles }: Props) {
   return (
-    <div className={`text-[16px] text-black-main font-inter ${styles}`}>
+    <div className={`text-[16px] text-white-main font-inter ${styles}`}>
       {children}
     </div>
   );

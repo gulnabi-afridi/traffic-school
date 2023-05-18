@@ -1,8 +1,10 @@
-import Image from 'next/image'
+import React from "react";
+import Home from "@/views/Home/Home";
 
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className='text-[40px] text-[red]'></div>
-  )
+    <React.Fragment>
+      <Home />
+    </React.Fragment>
+  );
 }
