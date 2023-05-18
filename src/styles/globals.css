@@ -7,3 +7,22 @@
   padding: 0px;
   box-sizing: border-box;
 }
+ html{
+  background-color: black;
+ }
+
+ /* =====> styles for drawer */
+ .drawer {
+  width: 50% !important;
+  background-color: #101014 !important;
+}
+@media screen and (max-width: 700px) {
+  .drawer {
+    width: 70% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .drawer {
+    width: 100% !important;
+  }
+}
