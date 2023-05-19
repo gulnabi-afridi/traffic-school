@@ -16,7 +16,7 @@ function WeAlsoOffer() {
               <Link
                 href="#"
                 key={index}
-                className="w-full h-[260px] flex px-8 justify-center items-center flex-col gap-4 shadow-2xl bg-white-main hover:scale-105 hover:border-[2px] border-brand-primary duration-300"
+                className="w-full h-[260px] flex px-8 justify-center items-center flex-col gap-4 shadow-2xl bg-white-main hover:scale-105 duration-300"
               >
                 <div className="w-full grid grid-cols-3 gap-3 justify-center items-center">
                   {/* ===> left line */}

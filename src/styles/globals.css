@@ -2,20 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
- html{
+html {
   background-color: white;
- }
+}
 
- /* =====> styles for drawer */
- .drawer {
+/* shadows  */
+.reviewCardShadow {
+  box-shadow: -1px 1px 14px -4px rgba(0, 0, 0, 0.75);
+}
+
+/* =====> styles for drawer */
+.drawer {
   width: 50% !important;
   background-color: #101014 !important;
 }
+.slick-prev,
+.slick-next {
+  top: 40% !important;
+}
+.slick-prev::before {
+  color: #fd4c1d !important;
+}
+.slick-next::before {
+  color: #fd4c1d !important;
+}
+.sldierCard {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.slick-dots li button:before {
+  font-size: 10px !important;
+  color: #fd4c1d !important;
+}
+
+.slick-list {
+  height: 430px !important;
+}
+
 @media screen and (max-width: 700px) {
   .drawer {
     width: 70% !important;

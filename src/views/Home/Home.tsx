@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Attributes from "./Attributes";
 import WhyGoToTrafficSchool from "./WhyGoToTrafficSchool";
 import WeAlsoOffer from "./WeAlsoOffer";
+import Reviews from "./Reviews";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Attributes/>
       <WhyGoToTrafficSchool/>
       <WeAlsoOffer/>
+      <Reviews/>
     </React.Fragment>
   );
 }
