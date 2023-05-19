@@ -7,7 +7,6 @@ import { RxCross2 } from "react-icons/rx";
 import { Spin as Hamburger } from "hamburger-react";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
-import Text from "@/components/Shared/Typography/Text";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,10 +22,12 @@ function Header() {
         <div className="hidden lg:flex justify-center items-center gap-14">
           {Data.Navibar.map((item, index) => {
             return (
-              <Link key={index} href={item.path}>
-                <Text styles="capitalize text-black-main font-medium relative after:absolute after:w-0 after:h-[3px] after:left-0 after:bottom-0 after:bg-brand-primary hover:after:w-full after:duration-200">
-                  {item.name}
-                </Text>
+              <Link
+                key={index}
+                href={item.path}
+                className="text-[16px] md:text-[20px] font-inter capitalize text-black-main font-medium relative after:absolute after:w-0 after:h-[3px] after:left-0 after:bottom-0 after:bg-brand-primary hover:after:w-full after:duration-200"
+              >
+                {item.name}
               </Link>
             );
           })}
@@ -34,15 +35,15 @@ function Header() {
         <div className="flex justify-center items-center gap-4">
           {/* =====> contact us button */}
           <button className="sm:block hidden w-[120px] md:w-[150px] h-[40px] md:h-[45px] bg-brand-primary text-white-main rounded-[10px] hover:opacity-80">
-            <Text styles="font-medium capitalize text-white-main">              
+            <p className="text-[16px] md:text-[20px] font-inter font-medium capitalize text-white-main">
               contact us
-            </Text>
+            </p>
           </button>
           {/* ======> login button */}
           <button className="sm:block hidden w-[80px] md:w-[100px] h-[40px] md:h-[45px] bg-transparent border-[2px] border-brand-primary font-inter text-[20px] text-black-main rounded-[10px] hover:bg-brand-primary hover:opacity-80">
-            <Text styles="font-medium capitalize text-black-main hover:text-white-main">
+            <p className="text-[16px] md:text-[20px] font-inter font-medium capitalize text-black-main hover:text-white-main">
               log in
-            </Text>
+            </p>
           </button>
 
           {/* ====> hamburger and drawer for small screen */}
@@ -80,11 +81,9 @@ function Header() {
                         key={index}
                         onClick={() => setIsOpen(false)}
                         href={navi.path}
-                        className=""
+                        className="text-white-main capitalize text-[16px] md:text-[20px] font-inter"
                       >
-                        <Text styles="text-white-main capitalize">
-                          {navi.name}
-                        </Text>
+                        {navi.name}
                       </Link>
                     );
                   })}
@@ -93,16 +92,15 @@ function Header() {
                 <div className="flex justify-center items-center flex-col gap-8 mt-8">
                   {/* =====> contact us button */}
                   <button className="w-[120px] md:w-[150px] h-[40px] md:h-[45px] bg-brand-primary text-white-main rounded-[10px] hover:opacity-80">
-                    <Text styles="font-medium capitalize text-white-main">
-                      {" "}
+                    <p className="text-[16px] md:text-[20px] font-inter font-medium capitalize text-white-main">
                       contact us
-                    </Text>
+                    </p>
                   </button>
                   {/* ======> login button */}
                   <button className="w-[120px] md:w-[100px] h-[40px] md:h-[45px] bg-transparent border-[2px] border-brand-primary font-inter text-[20px] rounded-[10px] hover:bg-brand-primary hover:opacity-80">
-                    <Text styles="font-medium capitalize text-white-main">
+                    <p className="text-[16px] md:text-[20px] font-inter font-medium capitalize text-white-main">
                       log in
-                    </Text>
+                    </p>
                   </button>
                 </div>
               </div>

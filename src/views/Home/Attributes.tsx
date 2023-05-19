@@ -1,7 +1,6 @@
 import React from "react";
 import Wrapper from "@/components/Shared/ComponentWrapper/Wrapper";
 import Image from "next/image";
-import Text from "@/components/Shared/Typography/Text";
 import { Data } from "../../../Data/JSON";
 
 function Attributes() {
@@ -14,10 +13,12 @@ function Attributes() {
               key={index}
               className="flex flex-col justify-center items-center gap-2"
             >
-              <div className="w-[70px] h-[70px] relative">
+              <div className="w-[55px] h-[55px] relative">
                 <Image src={item.img} fill className="object-cover" alt="" />
               </div>
-              <Text styles="capitalize text-center">{item.name}</Text>
+              <p className="text-[16px] md:text-[20px] text-black-main font-inter capitalize text-center">
+                {item.name}
+              </p>
             </div>
           );
         })}

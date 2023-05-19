@@ -1,8 +1,4 @@
 import React from "react";
-import H1Heading from "@/components/Shared/Typography/H1Heading";
-import LargeText from "@/components/Shared/Typography/LargeText";
-import Text from "@/components/Shared/Typography/Text";
-import SmallText from "@/components/Shared/Typography/SmallText";
 import { FaCheck } from "react-icons/fa";
 import Link from "next/link";
 
@@ -13,7 +9,9 @@ function Hero() {
       <div className="w-full h-full absolute left-0 top-0 bg-black-main/60"></div>
       {/* ====> */}
       <div className="w-full h-full absolute flex flex-col gap-8 justify-center items-center">
-        <H1Heading styles="uppercase text-white-main">online traffic school</H1Heading>
+        <p className="uppercase text-white-main text-[50px] font-semibold font-poppins">
+          online traffic school
+        </p>
         {/* ====> some attributes */}
         <div className="flex flex-col gap-3">
           {Attributes.map((item, index) => {
@@ -23,9 +21,9 @@ function Hero() {
                 className="flex justify-start items-center gap-4"
               >
                 <FaCheck className="text-brand-primary text-[38px]" />
-                <LargeText styles="capitalize text-white-main font-normal">
+                <p className="text-[26px] font-inter capitalize text-white-main font-normal">
                   {item.name}
-                </LargeText>
+                </p>
               </div>
             );
           })}
@@ -41,28 +39,30 @@ function Hero() {
           />
           {/* ===> get started button */}
           <button className="w-[260px] h-[55px] rounded-[10px] hover:opacity-70 bg-brand-primary">
-            <LargeText styles="capitalize">get started</LargeText>
+            <p className="text-[26px] font-inter capitalize text-white-main">
+              get started
+            </p>
           </button>
         </div>
         {/* ===> */}
         <div className="flex flex-col">
-          <Text styles="uppercase font-semibold text-white-main">
+          <p className="text-[16px] md:text-[20px] font-inter uppercase font-semibold text-white-main">
             <span className="text-brand-primary">
               {" "}
               TRY OUR COURSE FOR FREE!{" "}
             </span>
             IF YOU'RE NOT TOTALLY SATISFIED BEFORE TAKING THE FINAL EXAM, DON'T
             PAY!*
-          </Text>
+          </p>
           {/* ====> here will come link */}
           <Link href="#" className="">
-            <Text styles="text-brand-primary font-semibold underline">
+            <p className="text-[16px] md:text-[20px] font-inter text-brand-primary font-semibold underline">
               link for the free course
-            </Text>
+            </p>
           </Link>
-          <SmallText styles="font-semibold">
+          <p className="text-[16px] text-white-main font-inter font-semibold">
             *Except for Arizona, and courts that have set prices.
-          </SmallText>
+          </p>
         </div>
       </div>
     </div>
