@@ -8,7 +8,7 @@ interface Props {
 function Wrapper({ children, styles }: Props) {
   return (
     <div className={`w-full ${styles}`}>
-      <div className="w-full max-w-[1200px] m-auto md:px-8 px-4">{children}</div>
+      <div className="w-full max-w-[1280px] m-auto md:px-8 px-4">{children}</div>
     </div>
   );
 }
