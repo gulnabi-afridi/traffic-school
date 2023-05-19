@@ -5,14 +5,14 @@ interface Props {
   styles?: string;
 }
 
-function SmallText({ children, styles }: Props) {
+function H1Heading({ children, styles = "text-black-main" }: Props) {
   return (
     <div
-      className={`text-[30px] font-semibold text-black-main font-poppins ${styles}`}
+      className={`text-[50px] font-semibold font-poppins ${styles}`}
     >
       {children}
     </div>
   );
 }
 
-export default SmallText;
+export default H1Heading;

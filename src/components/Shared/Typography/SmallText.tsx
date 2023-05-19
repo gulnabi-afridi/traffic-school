@@ -5,7 +5,7 @@ interface Props {
   styles?: string;
 }
 
-function SmallText({ children, styles }: Props) {
+function SmallText({ children, styles = "text-black-main" }: Props) {
   return (
     <div className={`text-[16px] text-white-main font-inter ${styles}`}>
       {children}

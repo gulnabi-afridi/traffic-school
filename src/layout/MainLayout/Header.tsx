@@ -16,7 +16,7 @@ function Header() {
     <Wrapper>
       <div className="w-full h-[100px] flex justify-between items-center">
         {/* ====> logo */}
-        <p className="text-[35px] md:text-[50px] font-poppins font-semibold text-white-main">
+        <p className="text-[35px] md:text-[50px] font-poppins font-semibold text-black-main">
           Logo.
         </p>
         {/* ====> links */}
@@ -24,7 +24,7 @@ function Header() {
           {Data.Navibar.map((item, index) => {
             return (
               <Link key={index} href={item.path}>
-                <Text styles="capitalize font-medium relative after:absolute after:w-0 after:h-[3px] after:left-0 after:bottom-0 after:bg-brand-primary hover:after:w-full after:duration-200">
+                <Text styles="capitalize text-black-main font-medium relative after:absolute after:w-0 after:h-[3px] after:left-0 after:bottom-0 after:bg-brand-primary hover:after:w-full after:duration-200">
                   {item.name}
                 </Text>
               </Link>
@@ -34,14 +34,13 @@ function Header() {
         <div className="flex justify-center items-center gap-4">
           {/* =====> contact us button */}
           <button className="sm:block hidden w-[120px] md:w-[150px] h-[40px] md:h-[45px] bg-brand-primary text-white-main rounded-[10px] hover:opacity-80">
-            <Text styles="font-medium capitalize text-white-main">
-              {" "}
+            <Text styles="font-medium capitalize text-white-main">              
               contact us
             </Text>
           </button>
           {/* ======> login button */}
           <button className="sm:block hidden w-[80px] md:w-[100px] h-[40px] md:h-[45px] bg-transparent border-[2px] border-brand-primary font-inter text-[20px] text-black-main rounded-[10px] hover:bg-brand-primary hover:opacity-80">
-            <Text styles="font-medium capitalize hover:text-white-main">
+            <Text styles="font-medium capitalize text-black-main hover:text-white-main">
               log in
             </Text>
           </button>

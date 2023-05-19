@@ -5,9 +5,9 @@ interface Props {
   styles?: string;
 }
 
-function Text({ children, styles }: Props) {
+function Text({ children, styles = "text-black-main" }: Props) {
   return (
-    <div className={`text-[16px] md:text-[20px] text-white-main font-inter ${styles}`}>
+    <div className={`text-[16px] md:text-[20px] font-inter ${styles}`}>
       {children}
     </div>
   );

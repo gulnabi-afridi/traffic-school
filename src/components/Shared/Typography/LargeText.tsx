@@ -5,9 +5,9 @@ interface Props {
   styles?: string;
 }
 
-function LargeText({ children, styles }: Props) {
+function LargeText({ children, styles = "text-black-main" }: Props) {
   return (
-    <div className={`text-[22px] text-black-main font-inter ${styles}`}>
+    <div className={`text-[26px] font-inter ${styles}`}>
       {children}
     </div>
   );
