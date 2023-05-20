@@ -2,6 +2,8 @@ import React from "react";
 import Wrapper from "@/components/Shared/ComponentWrapper/Wrapper";
 import ReactStars from "react-stars";
 import Slider from "react-slick";
+import ReviewsCard from "@/components/ReviewsCard/ReviewsCard";
+import { Data } from "../../../Data/JSON";
 
 function Reviews() {
   // ===> for slider
@@ -68,35 +70,14 @@ function Reviews() {
         {/*============== Swiper ============= */}
         <div className="w-full mt-10">
           <Slider {...settings}>
-            {[0, 1, 2, 3, 4, 5, 6].map((item, index) => {
+            {Data.ReviewsData.map((item, index) => {
               return (
-                <div className="w-full sldierCard">
-                  <div
-                    key={index}
-                    className="w-full max-w-[280px] shadow-xl flex flex-col gap-4 p-8 rounded-[10px]"
-                  >
-                    {/* ====> reviwer name */}
-                    <p className="text-[24px] font-semibold text-black-main capitalize">
-                      haroon abid
-                    </p>
-                    {/* ===> star */}
-                    <ReactStars
-                      count={5}
-                      value={4.5}
-                      size={32}
-                      edit={false}
-                      color2={"#ffd700"}
-                      className="stars"
-                    />
-                    {/* ====> reviwe description */}
-                    <p className="text-[16px] font-inter leading-6 font-medium">
-                      This is a really great and helpful tool to help you get a
-                      clear understanding on what to expect on the permit test
-                      its straight forward I personally would invite people to
-                      use Drivers Ed!!!!
-                    </p>
-                  </div>
-                </div>
+                <ReviewsCard
+                   key={index}
+                  name={item.name}
+                  star={item.star}
+                  description={item.description}
+                />
               );
             })}
           </Slider>

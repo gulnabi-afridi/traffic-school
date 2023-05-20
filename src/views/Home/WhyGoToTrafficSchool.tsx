@@ -20,7 +20,7 @@ function WhyGoToTrafficSchool() {
           improvement, insurance reduction and mature driver safety courses in
           over 25 states across the country, as well as through thousands of
           individual courts in states where online traffic school courses may
-          not be approved. If you're unsure whether or not your court approves
+          not be approved. If you&apos;re unsure whether or not your court approves
           online traffic school, ask one of our [online agents] or call us at
           888.329.7069. Our DMV licensed courses provide an easy and effective
           way to:

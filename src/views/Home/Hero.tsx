@@ -32,13 +32,13 @@ function Hero() {
         <div className="flex md:flex-row flex-col justify-center items-center gap-4">
           {/* ===> select location */}
           <input
-            className="w-full max-w-[260px] h-[55px] border-[3px] placeholder:text-[18px] placeholder:font-medium text-[20px] font-inter font-medium md:font-semibold px-2 rounded-[10px] focus:outline-none border-brand-primary"
+            className="w-full max-w-[280px] h-[55px] border-[3px] placeholder:text-[18px] placeholder:font-medium text-[20px] md:text-[24px] font-inter font-medium px-2 rounded-[10px] focus:outline-none border-brand-primary"
             type="text"
             id="select-state"
             placeholder="Select State"
           />
           {/* ===> get started button */}
-          <button className="w-full max-w-[260px] h-[55px] rounded-[10px] hover:opacity-70 bg-brand-primary">
+          <button className="w-full max-w-[280px] h-[55px] rounded-[10px] hover:opacity-70 bg-brand-primary">
             <p className="text-[26px] font-inter capitalize text-white-main">
               get started
             </p>
@@ -51,7 +51,7 @@ function Hero() {
               {" "}
               TRY OUR COURSE FOR FREE!{" "}
             </span>
-            IF YOU'RE NOT TOTALLY SATISFIED BEFORE TAKING THE FINAL EXAM, DON'T
+            IF YOU&apos;RE NOT TOTALLY SATISFIED BEFORE TAKING THE FINAL EXAM, DON &&apos; T
             PAY!*
           </p>
           {/* ====> here will come link */}

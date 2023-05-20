@@ -23,7 +23,7 @@ html {
 }
 .slick-prev,
 .slick-next {
-  top: 40% !important;
+  top: 45% !important;
 }
 
 .slick-prev::before {
@@ -43,7 +43,7 @@ html {
 }
 
 .slick-list {
-  height: 410px !important;
+  min-height: 410px !important; 
 }
 @media screen and (max-width: 800px) {
   .slick-prev {
