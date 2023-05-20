@@ -25,6 +25,7 @@ html {
 .slick-next {
   top: 40% !important;
 }
+
 .slick-prev::before {
   color: #fd4c1d !important;
 }
@@ -42,9 +43,28 @@ html {
 }
 
 .slick-list {
-  height: 430px !important;
+  height: 410px !important;
 }
-
+@media screen and (max-width: 800px) {
+  .slick-prev {
+    left: -10px !important;
+  }
+  .slick-next {
+    right: -10px !important;
+  }
+  .slick-list {
+    height: 400px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .slick-prev {
+    left: -5px !important;
+  }
+  .slick-next {
+    right: -5px !important;
+  }
+}
+/* =====> swiper css end here */
 @media screen and (max-width: 700px) {
   .drawer {
     width: 70% !important;

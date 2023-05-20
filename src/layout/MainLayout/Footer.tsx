@@ -10,7 +10,7 @@ function Footer() {
     <Wrapper styles="py-10 bg-white-cool">
       <div className="w-full flex flex-col gap-8 justify-center items-center">
         {/* ====> logo */}
-        <p className="text-black-main text-[50px] font-bold font-poppins">
+        <p className="text-black-main text-[36px] sm:text-[50px] font-bold font-poppins">
           Logo.
         </p>
         {/* ====> social icons */}
@@ -23,7 +23,7 @@ function Footer() {
             );
           })}
         </div>
-        <p className="text-[16px] font-medium font-inter text-black-main">
+        <p className="text-[16px] text-center font-medium font-inter text-black-main">
           © 1997-2023 DriversEd.com. All rights reserved. Please see our privacy
           policy for more details.
         </p>
@@ -35,17 +35,17 @@ function Footer() {
 const Social = [
   {
     path: (
-      <BsTwitter className="text-[40px] text-black-main hover:scale-110 duration-300" />
+      <BsTwitter className="text-[30px] sm:text-[40px] text-black-main hover:scale-110 duration-300" />
     ),
   },
   {
     path: (
-      <AiFillInstagram className="text-[40px] text-black-main hover:scale-110 duration-300" />
+      <AiFillInstagram className="text-[30px] sm:text-[40px] text-black-main hover:scale-110 duration-300" />
     ),
   },
   {
     path: (
-      <BsFacebook className="text-[40px] text-black-main hover:scale-110 duration-300" />
+      <BsFacebook className="text-[30px] sm:text-[40px] text-black-main hover:scale-110 duration-300" />
     ),
   },
 ];

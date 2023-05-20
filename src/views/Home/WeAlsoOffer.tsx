@@ -7,16 +7,18 @@ function WeAlsoOffer() {
   return (
     <Wrapper styles="bg-white-cool py-10">
       <div className="w-full flex flex-col justify-center items-center">
-        <p className="text-[34px] uppercase font-semibold font-poppins">
+        <p className="text-[28px] md:text-[34px] uppercase font-semibold font-poppins">
           we also offer
         </p>
-        <div className="w-full grid gap-6 grid-cols-4 py-10">
+        <div className="w-full grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 py-6 sm:py-10">
           {CoursesWeOffer.map((item, index) => {
             return (
+              <div className="w-full flex justify-center items-center">
+
               <Link
                 href="#"
                 key={index}
-                className="w-full h-[260px] flex px-8 justify-center items-center flex-col gap-4 shadow-2xl bg-white-main hover:scale-105 duration-300"
+                className="w-full max-w-[300px] h-[260px] flex px-8 justify-center items-center flex-col gap-4 shadow-2xl bg-white-main hover:scale-105 duration-300"
               >
                 <div className="w-full grid grid-cols-3 gap-3 justify-center items-center">
                   {/* ===> left line */}
@@ -39,6 +41,7 @@ function WeAlsoOffer() {
                   {item.name}
                 </p>
               </Link>
+              </div>
             );
           })}
         </div>

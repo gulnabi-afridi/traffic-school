@@ -11,16 +11,42 @@ function Reviews() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1224,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 930,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 630,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <Wrapper styles="py-10">
       <div className="w-full flex flex-col justify-center items-center">
-        <div className="flex justify-center items-center gap-6">
+        <div className="flex md:flex-row flex-col justify-center items-center gap-3 sm:gap-6">
           <p className="text-[34px] uppercase text-black-main font-semibold font-poppins">
             reviews
           </p>
-          <div className="flex justify-center items-center gap-6">
+          <div className="flex sm:flex-row flex-col justify-center items-center gap-3 sm:gap-6">
             {/* ==> average star */}
             <ReactStars
               count={5}
@@ -49,11 +75,11 @@ function Reviews() {
                     key={index}
                     className="w-full max-w-[280px] shadow-xl flex flex-col gap-4 p-8 rounded-[10px]"
                   >
-                    {/* ===> reviewer name */}
+                    {/* ====> reviwer name */}
                     <p className="text-[24px] font-semibold text-black-main capitalize">
                       haroon abid
                     </p>
-                    {/* ===> stars */}
+                    {/* ===> star */}
                     <ReactStars
                       count={5}
                       value={4.5}
@@ -62,7 +88,7 @@ function Reviews() {
                       color2={"#ffd700"}
                       className="stars"
                     />
-                    {/* ==> review description */}
+                    {/* ====> reviwe description */}
                     <p className="text-[16px] font-inter leading-6 font-medium">
                       This is a really great and helpful tool to help you get a
                       clear understanding on what to expect on the permit test

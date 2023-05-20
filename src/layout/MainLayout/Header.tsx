@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <Wrapper>
-      <div className="w-full h-[100px] flex justify-between items-center">
+      <div className="w-full h-[80px] md:h-[100px] flex justify-between items-center">
         {/* ====> logo */}
         <p className="text-[35px] md:text-[50px] font-poppins font-semibold text-black-main">
           Logo.

@@ -5,8 +5,8 @@ import { Data } from "../../../Data/JSON";
 
 function Attributes() {
   return (
-    <Wrapper styles=" bg-white-off py-10">
-      <div className="w-full grid gap-10 grid-cols-6">
+    <Wrapper styles=" bg-white-cool py-10">
+      <div className="w-full grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
         {Data.Attributes.map((item, index) => {
           return (
             <div
