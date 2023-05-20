@@ -4,6 +4,7 @@ import Attributes from "./Attributes";
 import WhyGoToTrafficSchool from "./WhyGoToTrafficSchool";
 import WeAlsoOffer from "./WeAlsoOffer";
 import Reviews from "./Reviews";
+import CallToAction from "@/components/Shared/CallToAction/CallToAction";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <WhyGoToTrafficSchool/>
       <WeAlsoOffer/>
       <Reviews/>
+      
     </React.Fragment>
   );
 }
