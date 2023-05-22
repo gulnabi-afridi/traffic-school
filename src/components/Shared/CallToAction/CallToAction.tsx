@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Wrapper from "../ComponentWrapper/Wrapper";
 import OutSideClick from "@/hooks/OutSideClick";
 import { GoLocation } from "react-icons/go";
+import { FiChevronDown } from "react-icons/fi";
 
 function CallToAction() {
   const [isSticky, setIsSticky] = useState(false);
@@ -36,14 +37,17 @@ function CallToAction() {
         <div className="flex sm:flex-row flex-col justify-center items-center gap-4">
           {/* ===> select location */}
           <div className="w-full max-w-[210px] flex flex-col justify-center items-center relative ">
-            <input
-              onClick={() => setIsOpen(true)}
-              className="w-full h-[55px] border-[3px] placeholder:text-[18px] placeholder:font-medium text-[18px] font-inter font-medium px-2 rounded-[10px] focus:outline-none border-brand-primary"
-              type="text"
-              id="select-state"
-              value={location}
-              placeholder="Select State"
-            />
+            <div className="w-full flex justify-between items-center">
+              <input
+                onClick={() => setIsOpen(true)}
+                className="w-full h-[55px] border-[3px] placeholder:text-[18px] placeholder:font-medium text-[18px] font-inter font-medium px-2 rounded-[10px] focus:outline-none border-brand-primary"
+                type="text"
+                id="select-state"
+                value={location}
+                placeholder="Select State"
+              />
+              <FiChevronDown className="text-[28px] text-[#afb4be] absolute right-3" />
+            </div>
             {IsOpen && (
               <OutSideClick
                 style="w-full max-h-[500px] srollBar overflow-auto bg-white-main border-[2px] border-solid border-brand-main rounded-[8px] p-3 absolute -top-[20rem] z-30"
