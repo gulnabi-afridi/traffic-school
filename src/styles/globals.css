@@ -43,7 +43,7 @@ html {
 }
 
 .slick-list {
-  min-height: 410px !important; 
+  min-height: 410px !important;
 }
 @media screen and (max-width: 800px) {
   .slick-prev {
@@ -74,4 +74,29 @@ html {
   .drawer {
     width: 100% !important;
   }
+}
+
+/* scroll bar style */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  /* background: #888; */
+  background-color: #fd4c1d;
+}
+/* ======> specific div scroll bar */
+
+.srollBar::-webkit-scrollbar {
+  width: 8px;
+}
+.srollBar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 30px;
+}
+.srollBar::-webkit-scrollbar-thumb {
+  background-color: #fd4c1d;
+  border-radius: 30px;
 }
