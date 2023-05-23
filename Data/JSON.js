@@ -17,7 +17,7 @@ export const Data = {
       path: "#",
     },
   ],
-  Attributes : [
+  Attributes: [
     {
       img: "/assets/check.png",
       name: "lowest price",
@@ -43,7 +43,7 @@ export const Data = {
       name: "can be taken on any device",
     },
   ],
-  CoursesWeOffer : [
+  CoursesWeOffer: [
     {
       img: "/assets/course2.png",
       name: "insurance reduction",
@@ -61,7 +61,7 @@ export const Data = {
       name: "driver's ed courses",
     },
   ],
-  ReviewsData : [
+  ReviewsData: [
     {
       name: "haroon abid",
       star: 3,
@@ -105,4 +105,34 @@ export const Data = {
         "This is a really great and helpful tool to help you get a clear understanding on what to expect on the permit test its straight forward I personally would invite people to use Drivers Ed!!!!",
     },
   ],
+  faqs: {
+    title: "Driving Faqs",
+    rows: [
+      {
+        title: "What is Tafiic?",
+        content:
+          "Tafiic is an online education platform that offers a wide range of courses and learning materials to help you acquire new skills and knowledge from the comfort of your own home. ",
+      },
+      {
+        title: "How does Tafiic work?",
+        content:
+          "Tafiic provides a user-friendly interface where you can browse through various courses and enroll in the ones that interest you. Once enrolled, you gain access to the course materials, including video lectures, assignments, quizzes, and additional resources.",
+      },
+      {
+        title: "Are the courses on Tafiic self-paced?",
+        content:
+          "Yes, Tafiic offers self-paced courses, allowing you to learn at your own convenience. You can access the course materials whenever you want and progress through the content at your own speed.",
+      },
+      {
+        title: "Can I interact with instructors on Tafiic?",
+        content:
+          "Absolutely! Tafiic promotes student-instructor interaction through various means such as discussion forums, messaging systems, and live webinars. You can ask questions, seek clarification, and engage in discussions with instructors and fellow learners.",
+      },
+      {
+        title: "Can I earn a certificate upon completion of a course?",
+        content:
+          "Yes, Tafiic provides certificates of completion for many courses. Once you successfully finish a course, you will receive a certificate that you can showcase on your resume or LinkedIn profile to highlight your newly acquired skills.",
+      },
+    ],
+  },
 };

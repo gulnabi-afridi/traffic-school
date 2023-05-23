@@ -6,6 +6,7 @@ import WeAlsoOffer from "./WeAlsoOffer";
 import Reviews from "./Reviews";
 import CallToAction from "@/components/Shared/CallToAction/CallToAction";
 import BenefitsOfOnlineTrafficSchool from "./BenefitsOfOnlineTrafficSchool";
+import Faqs from "./Faqs";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <WhyGoToTrafficSchool/>
       {/* <WeAlsoOffer/> */}
       <BenefitsOfOnlineTrafficSchool/>
+      <Faqs/>
       <Reviews/>
       
     </React.Fragment>
