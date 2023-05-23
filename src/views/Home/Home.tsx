@@ -12,10 +12,8 @@ function Home() {
       <Hero />
       <Attributes/>
       <WhyGoToTrafficSchool/>
-      {/* <WeAlsoOffer/> */}
       <BenefitsOfOnlineTrafficSchool/>
       <Faqs/>
-      {/* <Reviews/> */}
       
     </React.Fragment>
   );
