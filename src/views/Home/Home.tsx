@@ -2,11 +2,9 @@ import React from "react";
 import Hero from "./Hero";
 import Attributes from "./Attributes";
 import WhyGoToTrafficSchool from "./WhyGoToTrafficSchool";
-import WeAlsoOffer from "./WeAlsoOffer";
-import Reviews from "./Reviews";
-import CallToAction from "@/components/Shared/CallToAction/CallToAction";
 import BenefitsOfOnlineTrafficSchool from "./BenefitsOfOnlineTrafficSchool";
 import Faqs from "./Faqs";
+
 
 function Home() {
   return (
@@ -17,7 +15,7 @@ function Home() {
       {/* <WeAlsoOffer/> */}
       <BenefitsOfOnlineTrafficSchool/>
       <Faqs/>
-      <Reviews/>
+      {/* <Reviews/> */}
       
     </React.Fragment>
   );
