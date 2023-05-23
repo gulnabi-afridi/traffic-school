@@ -4,17 +4,23 @@ import Link from "next/link";
 import { BsTwitter } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
+import Image from "next/image";
 
 function Footer() {
   return (
     <Wrapper styles="py-10 bg-white-cool">
       <div className="w-full flex flex-col gap-8 justify-center items-center">
         {/* ====> logo */}
-        <p className="text-black-main text-[36px] sm:text-[50px] font-bold font-poppins">
-          Logo.
-        </p>
+        <div className="w-[180px] sm:w-[240px] h-[120px] relative -mt-6">
+          <Image
+            src="/assets/logo.png"
+            fill
+            className="object-contain"
+            alt=""
+          />
+        </div>
         {/* ====> social icons */}
-        <div className="flex justify-center items-center gap-6">
+        <div className="flex justify-center items-center gap-6 -mt-12 sm:-mt-10">
           {Social.map((item, index) => {
             return (
               <Link key={index} href="#">
@@ -31,7 +37,6 @@ function Footer() {
     </Wrapper>
   );
 }
-
 
 const Social = [
   {

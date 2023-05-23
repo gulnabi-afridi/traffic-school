@@ -15,9 +15,9 @@ function Header() {
 
   return (
     <Wrapper>
-      <div className="w-full h-[80px] md:h-[100px] flex justify-between items-center">
+      <div className="w-full h-[70px] md:h-[100px] flex justify-between items-center">
         {/* ====> logo */}
-        <div className="w-[240px] h-[120px] relative">
+        <div className="w-[180px] sm:w-[240px] h-[120px] relative">
           <Image
             src="/assets/logo.png"
             fill
@@ -92,14 +92,22 @@ function Header() {
                 <div className="flex flex-col justify-center items-center gap-8 mt-16">
                   {Data.Navibar.map((navi, index) => {
                     return (
-                      <Link
-                        key={index}
+                      <ScrollLink
                         onClick={() => setIsOpen(false)}
-                        href={navi.path}
+                        key={index}
+                        to={navi.path}
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={0}
+                        duration={800}
+                        isDynamic={true}
+                        ignoreCancelEvents={false}
+                        spyThrottle={500}
                         className="text-white-main capitalize text-[16px] md:text-[20px] font-inter"
                       >
                         {navi.name}
-                      </Link>
+                      </ScrollLink>
                     );
                   })}
                 </div>
