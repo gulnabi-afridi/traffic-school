@@ -2,19 +2,19 @@ export const Data = {
   Navibar: [
     {
       name: "home",
-      path: "#",
+      path: "home",
     },
     {
       name: "attributes",
-      path: "#",
-    },
-    {
-      name: "how it work",
-      path: "#",
+      path: "attributes",
     },
     {
       name: "faq",
-      path: "#",
+      path: "faqs",
+    },
+    {
+      name: "reviews",
+      path: "reviews",
     },
   ],
   Attributes: [

@@ -43,7 +43,10 @@ function Reviews() {
 
   return (
     <Wrapper styles="py-10">
-      <div className="w-full flex flex-col justify-center items-center">
+      <div
+        id="reviews"
+        className="w-full flex flex-col justify-center items-center"
+      >
         <div className="flex md:flex-row flex-col justify-center items-center gap-3 sm:gap-6">
           <p className="text-[34px] uppercase text-black-main font-semibold font-poppins">
             reviews
@@ -73,7 +76,7 @@ function Reviews() {
             {Data.ReviewsData.map((item, index) => {
               return (
                 <ReviewsCard
-                   key={index}
+                  key={index}
                   name={item.name}
                   star={item.star}
                   description={item.description}

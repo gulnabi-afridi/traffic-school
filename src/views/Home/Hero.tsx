@@ -10,7 +10,7 @@ function Hero() {
   const [location, setLocation] = useState("");
 
   return (
-    <div className="w-full h-screen md:h-[calc(100vh-136px)] relative bg-[url('/assets/heroBg.jpeg')] bg-no-repeat bg-cover">
+    <div id="home" className="w-full h-screen md:h-[calc(100vh-136px)] relative bg-[url('/assets/heroBg.jpeg')] bg-no-repeat bg-cover">
       {/* ====> overly on image */}
       <div className="w-full h-full absolute left-0 top-0 bg-black-main/60"></div>
       {/* ====> */}

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Wrapper from "../../components/Shared/ComponentWrapper/Wrapper";
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 import { Data } from "../../../Data/JSON";
 import { RxCross2 } from "react-icons/rx";
+import Image from "next/image";
 // ====> import for drawer and humburger
 import { Spin as Hamburger } from "hamburger-react";
 import Drawer from "react-modern-drawer";
@@ -15,20 +17,33 @@ function Header() {
     <Wrapper>
       <div className="w-full h-[80px] md:h-[100px] flex justify-between items-center">
         {/* ====> logo */}
-        <p className="text-[35px] md:text-[50px] font-poppins font-semibold text-black-main">
-          Logo.
-        </p>
+        <div className="w-[240px] h-[120px] relative">
+          <Image
+            src="/assets/logo.png"
+            fill
+            className="object-contain"
+            alt=""
+          />
+        </div>
         {/* ====> links */}
-        <div className="hidden lg:flex justify-center items-center gap-14">
+        <div className="hidden lg:flex justify-center items-center gap-14 -ml-8">
           {Data.Navibar.map((item, index) => {
             return (
-              <Link
+              <ScrollLink
                 key={index}
-                href={item.path}
-                className="text-[16px] md:text-[20px] font-inter capitalize text-black-main font-medium relative after:absolute after:w-0 after:h-[3px] after:left-0 after:bottom-0 after:bg-brand-primary hover:after:w-full after:duration-200"
+                to={item.path}
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={0}
+                duration={800}
+                isDynamic={true}
+                ignoreCancelEvents={false}
+                spyThrottle={500}
+                className="text-[16px] md:text-[20px] cursor-pointer font-inter capitalize text-black-main font-medium relative after:absolute after:w-0 after:h-[3px] after:left-0 after:bottom-0 after:bg-brand-primary hover:after:w-full after:duration-200"
               >
                 {item.name}
-              </Link>
+              </ScrollLink>
             );
           })}
         </div>
@@ -111,24 +126,5 @@ function Header() {
     </Wrapper>
   );
 }
-
-const Navibar = [
-  {
-    name: "home",
-    path: "#",
-  },
-  {
-    name: "attributes",
-    path: "#",
-  },
-  {
-    name: "how it work",
-    path: "#",
-  },
-  {
-    name: "faq",
-    path: "#",
-  },
-];
 
 export default Header;
